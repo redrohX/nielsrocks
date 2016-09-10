@@ -1,0 +1,35 @@
+{
+  "name": "metalsmith-prismic-template",
+  "version": "0.0.1",
+  "description": "Metalsmith prismic template",
+  "license": "MIT",
+  "author": "Futurice Ltd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futurice/metalsmith-prismic-template.git"
+  },
+  "scripts": {
+    "install": "npm install metalsmith-prismic-server",
+    "test": "node server.js build",
+    "dev": "node server.js dev",
+    "build": "node server.js build",
+    "start": "node server.js prod"
+  },
+  "engines": {
+    "node": "4.2.3",
+    "npm": "3.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "handlebars": "^4.0.5",
+    "metalsmith-autoprefixer": "^1.1.0",
+    "metalsmith-beautify": "0.0.7",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^1.4.2",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-prismic-server": "^0.1.1",
+    "metalsmith-s3": "git://github.com/mwishek/metalsmith-s3#9ee6df8f7a3b0bdedee616e248c5da0c3a0b2116",
+    "metalsmith-sass": "^1.3.0",
+    "normalize.css": "^3.0.3"
+  }
+}

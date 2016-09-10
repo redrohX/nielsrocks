@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  {{> head
+    title="Blog"
+  }}
+  <body>
+    {{> debug }}
+    <main class="main">
+    {{#each prismic.blogposts.results}}
+      <section>
+        <a href="{{ slug }}">{{{ data.title.html }}}</a>
+      </section>
+    {{/each}}
+    </main>
+  </body>
+</html>
