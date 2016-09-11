@@ -1,8 +1,8 @@
 ---
-layout: blog.html
+layout: blog-post.html
 language: nl
 prismic:
-  blogposts:
+  blogpost:
     query: '[[:d = at(document.tags, ["language:nl"])] [:d = at(document.type, "blog")]]'
-    allPages: true
+    collection: true
 ---

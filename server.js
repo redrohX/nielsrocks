@@ -52,7 +52,8 @@ var config = {
     var filename = doc.data ? 'index.html' : '';
 
     var language = utils.getLanguageFromTags(doc);
-    if (language) {
+
+    if (language !== undefined && language !== 'en') {
       // *TEMPLATE-i18n* Use this linkResolver to generate i18n-links based on languages tags defined in Prismic
       // *TEMPLATE-i18n* E.g. The paths for each blog-post in the fi/i18n-blog-post.md collection will be generated as:
       // *TEMPLATE-i18n*      /fi/i18n-blog-post/mun-toka-blogipostaus/index.html
@@ -61,7 +62,7 @@ var config = {
         case 'i18n-example':
           return '/' + language + '/' + filename;
         default:
-          return '/' + language + '/' + doc.type + '/' +  (doc.uid || doc.slug) + '/' + filename;
+          return '/' + language + '/' + doc.type + '-' + language + '/' +  (doc.uid || doc.slug) + '/' + filename;
       }
     } else {
       switch (doc.type) {
