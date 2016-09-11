@@ -1,9 +1,22 @@
 @import "./vendor/normalize";
 @import "constants";
 
-html,
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    font-size: 100%;
+}
+
 body {
-    font-size: 26px;
+    box-sizing: inherit;
+    font-size: 17px;
     background-color: $color-bg-gray;
     font-family: $font-regular;
     color: $color-fg-dark;
