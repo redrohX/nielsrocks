@@ -114,8 +114,8 @@ var config = {
     deploy: [
       s3({
         action: 'write',
-        bucket: 'metalsmith-prismic-template.futurice.com',
-        region: 'eu-west-1'
+        bucket: 'nielsrocks',
+        region: 'eu-central-1'
       })
     ]
   }
